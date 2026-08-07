@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ARMATUS — Privacy Policy</title>
+  <meta name="theme-color" content="#000000" />
+  <link rel="icon" type="image/png" href="../assets/brand/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --black: #000; --surface: #1c1c1e; --orange: #ff6b35;
+      --white: #fff; --muted: #8e8e93; --line: rgba(255,255,255,0.1);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--black); color: var(--white);
+      font-family: "IBM Plex Sans", sans-serif; line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    header {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 1.25rem clamp(1.25rem, 4vw, 2.5rem);
+      border-bottom: 1px solid var(--line);
+    }
+    .mark {
+      font-family: Syne, sans-serif; font-weight: 800;
+      letter-spacing: 0.18em; font-size: 0.9rem; color: var(--white);
+      text-decoration: none;
+    }
+    .back { color: var(--muted); text-decoration: none; font-size: 0.9rem; }
+    .back:hover { color: var(--orange); }
+    main {
+      max-width: 720px; margin: 0 auto;
+      padding: 2.5rem clamp(1.25rem, 4vw, 2.5rem) 4rem;
+    }
+    h1 {
+      font-family: Syne, sans-serif; font-weight: 800;
+      font-size: clamp(1.8rem, 4vw, 2.4rem); letter-spacing: -0.02em;
+      margin: 0 0 0.35rem;
+    }
+    .sub { color: var(--muted); margin-bottom: 2rem; }
+    h2 {
+      font-family: Syne, sans-serif; font-weight: 700;
+      font-size: 1.15rem; margin: 2.25rem 0 0.75rem;
+    }
+    p, li { color: rgba(255,255,255,0.88); }
+    ul { padding-left: 1.2rem; }
+    li { margin: 0.4rem 0; }
+    a { color: var(--orange); }
+    code {
+      background: var(--surface); padding: 0.1em 0.35em;
+      border-radius: 3px; font-size: 0.92em;
+    }
+    footer {
+      margin-top: 3rem; padding-top: 1.5rem;
+      border-top: 1px solid var(--line);
+      font-size: 0.92rem; color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="mark" href="../">ARMATUS</a>
+    <a class="back" href="../">← Home</a>
+  </header>
+  <main>
+    <h1>Privacy Policy</h1>
+    <p class="sub">Last updated: <strong>May 16, 2026</strong></p>
+
+    <p>This Privacy Policy explains how <strong>Armatus</strong> ("Armatus", "we", "us") collects, uses, and shares information when you use the Armatus mobile application. By using Armatus you agree to the practices described here.</p>
+
+    <h2>1. Information we collect</h2>
+    <ul>
+      <li><strong>Account information.</strong> When you create an account we store your email address and a hashed password. If you sign in with Apple or Google we store only the stable identifier provided by that service plus the email address it returns.</li>
+      <li><strong>Profile and fitness data.</strong> When you complete onboarding we store the profile you enter — name, age, height, weight, sex, fitness level, goals, training preferences, equipment, injuries, lifestyle answers, and related notes. This information is used to personalise your workouts.</li>
+      <li><strong>Workout activity.</strong> We store the workouts you generate, your logged sessions (exercises, sets, weights, reps, duration, intensity, notes) and any personal records you save.</li>
+      <li><strong>Coaching chat.</strong> Messages you send to the in-app coach and the coach's responses are stored so you can revisit them and so the coach can maintain context across sessions.</li>
+      <li><strong>Technical data.</strong> Our servers automatically log standard request metadata such as IP address, user-agent, request timestamps, and a request ID used to debug problems. We do not use this to track you across other apps or websites.</li>
+    </ul>
+
+    <h2>2. How we use information</h2>
+    <ul>
+      <li>To create and operate your account.</li>
+      <li>To generate personalised workout plans and respond to your coaching questions using a third-party large language model provider (currently OpenAI). The text we send includes your fitness profile, recent workout history, and your message — it never includes your password.</li>
+      <li>To improve reliability and performance (logs, error monitoring).</li>
+      <li>To comply with legal obligations and prevent abuse.</li>
+    </ul>
+
+    <h2>3. Data we do NOT collect</h2>
+    <ul>
+      <li>We do not collect device location, contacts, photos, the camera, the microphone, health/fitness data from Apple Health, or any data not described above.</li>
+      <li>We do not use third-party advertising or cross-app tracking SDKs.</li>
+      <li>We do not sell your personal information.</li>
+    </ul>
+
+    <h2>4. How we share information</h2>
+    <ul>
+      <li><strong>AI service providers.</strong> To generate coach responses we send the necessary context (your profile and message) to OpenAI under their data-processing terms. OpenAI does not train on data submitted via their API.</li>
+      <li><strong>Infrastructure providers.</strong> We host the Armatus backend and database on third-party cloud infrastructure (currently Railway). Those providers process data on our instructions only.</li>
+      <li><strong>Authentication providers.</strong> If you choose Sign in with Apple or Google, those services receive standard sign-in metadata from your device.</li>
+      <li><strong>Legal.</strong> We may disclose information when required by law or to prevent fraud, abuse, or harm.</li>
+    </ul>
+
+    <h2>5. Data retention &amp; deletion</h2>
+    <p>Your data is kept while your account exists. You can permanently delete your account at any time from <em>Profile → Data &amp; account → Delete account &amp; data</em>. Deletion removes your profile, workout history, coach chats, personal records, and weekly plans from our active databases.</p>
+
+    <h2>6. Security</h2>
+    <p>Passwords are stored as bcrypt hashes. Network traffic between the app and our servers uses HTTPS. Authentication tokens on your device are stored in the iOS Keychain or Android Keystore (via <code>expo-secure-store</code>). No method of electronic storage is 100% secure; we cannot guarantee absolute security.</p>
+
+    <h2>7. Children</h2>
+    <p>Armatus is not intended for children under 13 (or under 16 in the EU/UK), and we do not knowingly collect information from them. If you believe a child has provided us with information, contact us and we will delete it.</p>
+
+    <h2>8. International users</h2>
+    <p>Armatus may be operated and accessed from anywhere in the world. By using the app you consent to the transfer of your information to the countries where our service providers operate.</p>
+
+    <h2>9. Your rights</h2>
+    <p>Depending on where you live (e.g. EEA, UK, California), you may have rights to access, correct, port, restrict, or delete your personal data, and to object to certain processing. Contact us at <a href="mailto:masdas.aipro@gmail.com">masdas.aipro@gmail.com</a> to exercise these rights.</p>
+
+    <h2>10. Health disclaimer</h2>
+    <p>Armatus provides general fitness guidance only. It is not medical advice and is not a substitute for consultation with a qualified healthcare professional. Always consult your physician before starting any new exercise program.</p>
+
+    <h2>11. Changes to this policy</h2>
+    <p>We may update this Privacy Policy from time to time. Material changes will be reflected by the "Last updated" date at the top of this page and, when appropriate, by an in-app notice.</p>
+
+    <h2>12. Contact</h2>
+    <p>Questions about this policy: <a href="mailto:masdas.aipro@gmail.com">masdas.aipro@gmail.com</a></p>
+
+    <footer>
+      <a href="../">← Back to ARMATUS</a>
+    </footer>
+  </main>
+</body>
+</html>
