@@ -110,6 +110,71 @@ button {
   top: 12px;
 }
 
+/* Ambient page energy — AuthLogoHero-adjacent, orange only */
+.ambient {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.ambient-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.22;
+  background: radial-gradient(circle, rgba(255, 107, 53, 0.55) 0%, transparent 70%);
+  animation: orb-drift 14s ease-in-out infinite;
+}
+
+.ambient-orb--a {
+  width: min(48vw, 420px);
+  height: min(48vw, 420px);
+  top: -8%;
+  right: -6%;
+  animation-duration: 16s;
+}
+
+.ambient-orb--b {
+  width: min(40vw, 340px);
+  height: min(40vw, 340px);
+  bottom: 18%;
+  left: -10%;
+  opacity: 0.14;
+  animation-duration: 20s;
+  animation-delay: -4s;
+}
+
+.ambient-orb--c {
+  width: min(36vw, 300px);
+  height: min(36vw, 300px);
+  top: 48%;
+  right: 18%;
+  opacity: 0.1;
+  animation-duration: 18s;
+  animation-delay: -8s;
+}
+
+@keyframes orb-drift {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 0.16;
+  }
+  50% {
+    transform: translate3d(2%, -3%, 0) scale(1.08);
+    opacity: 0.28;
+  }
+}
+
+main,
+.topbar,
+.footer {
+  position: relative;
+  z-index: 1;
+}
+
 /* Top bar */
 .topbar {
   position: fixed;
@@ -203,6 +268,36 @@ button {
   line-height: 1.05;
 }
 
+.brand-underline {
+  display: block;
+  width: 48px;
+  height: 3px;
+  margin-top: 14px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--primary), var(--primary-soft), var(--primary-deep));
+  background-size: 200% 100%;
+  box-shadow: 0 0 16px rgba(255, 107, 53, 0.45);
+  animation: underline-pulse 2.8s ease-in-out infinite;
+}
+
+.brand-underline--center {
+  margin-inline: auto;
+}
+
+@keyframes underline-pulse {
+  0%,
+  100% {
+    width: 48px;
+    background-position: 0% 50%;
+    opacity: 0.85;
+  }
+  50% {
+    width: 88px;
+    background-position: 100% 50%;
+    opacity: 1;
+  }
+}
+
 .wordmark--cta {
   margin: 0;
   font-size: clamp(1.75rem, 5vw, 2.5rem);
@@ -246,6 +341,14 @@ button {
   width: 96px;
   height: 96px;
   margin-bottom: var(--space-lg);
+  animation: logo-pulse 2.2s ease-in-out infinite;
+}
+
+.logo-mark--cta {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto var(--space-lg);
+  animation: logo-pulse 2.2s ease-in-out infinite;
 }
 
 .logo-mark--hero .logo-ring {
@@ -254,6 +357,14 @@ button {
 
 .logo-mark--hero .logo-ring--inner {
   inset: -12px;
+}
+
+.logo-mark--cta .logo-ring {
+  inset: -16px;
+}
+
+.logo-mark--cta .logo-ring--inner {
+  inset: -8px;
 }
 
 .logo-ring {
@@ -270,8 +381,14 @@ button {
   animation: logo-spin-rev 14s linear infinite;
 }
 
-.logo-mark--hero {
-  animation: logo-pulse 2.2s ease-in-out infinite;
+.logo-core-glow {
+  position: absolute;
+  inset: -8px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 107, 53, 0.45) 0%, transparent 68%);
+  z-index: 1;
+  animation: core-glow 2s ease-in-out infinite;
+  pointer-events: none;
 }
 
 @keyframes logo-spin {
@@ -296,15 +413,193 @@ button {
   }
 }
 
+@keyframes core-glow {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scale(0.92);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.08);
+  }
+}
+
 /* Hero */
 .hero {
+  position: relative;
   min-height: 100svh;
   display: flex;
   align-items: center;
   padding: calc(72px + var(--space-xl)) var(--pad) var(--space-xxl);
+  overflow: hidden;
+}
+
+.hero-energy,
+.cta-energy {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.ripple {
+  position: absolute;
+  left: 18%;
+  top: 38%;
+  width: min(42vw, 320px);
+  height: min(42vw, 320px);
+  margin: calc(min(42vw, 320px) / -2) 0 0 calc(min(42vw, 320px) / -2);
+  border-radius: 50%;
+  border: 1px solid rgba(255, 107, 53, 0.35);
+  opacity: 0;
+  animation: ripple-out 2.2s cubic-bezier(0.22, 0.61, 0.36, 1) infinite;
+}
+
+.ripple--2 {
+  animation-delay: 0.7s;
+}
+
+.ripple--3 {
+  animation-delay: 1.4s;
+}
+
+.cta-energy .ripple {
+  left: 50%;
+  top: 42%;
+}
+
+@keyframes ripple-out {
+  0% {
+    transform: scale(0.45);
+    opacity: 0.55;
+  }
+  100% {
+    transform: scale(1.55);
+    opacity: 0;
+  }
+}
+
+.bolt {
+  position: absolute;
+  left: 12%;
+  top: 22%;
+  width: clamp(36px, 6vw, 56px);
+  height: auto;
+  color: var(--primary);
+  opacity: 0;
+  filter: drop-shadow(0 0 12px rgba(255, 107, 53, 0.65));
+  animation: bolt-flash 5.5s ease-in-out infinite;
+}
+
+.bolt--cta {
+  left: auto;
+  right: 14%;
+  top: 18%;
+  animation-delay: 1.8s;
+}
+
+.bolt-path {
+  fill: rgba(255, 107, 53, 0.12);
+  stroke: var(--primary);
+}
+
+@keyframes bolt-flash {
+  0%,
+  86%,
+  100% {
+    opacity: 0;
+    transform: scale(0.92) translateY(4px);
+  }
+  88% {
+    opacity: 0.15;
+  }
+  90%,
+  93% {
+    opacity: 0.95;
+    transform: scale(1) translateY(0);
+  }
+  95% {
+    opacity: 0.2;
+  }
+}
+
+.ember {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--primary-soft);
+  box-shadow: 0 0 8px rgba(255, 107, 53, 0.8);
+  opacity: 0;
+  animation: ember-rise 3.6s ease-in-out infinite;
+}
+
+.ember--1 {
+  left: 16%;
+  bottom: 28%;
+  animation-delay: 0s;
+}
+.ember--2 {
+  left: 22%;
+  bottom: 24%;
+  animation-delay: 0.5s;
+  width: 2px;
+  height: 2px;
+}
+.ember--3 {
+  left: 28%;
+  bottom: 30%;
+  animation-delay: 1.1s;
+}
+.ember--4 {
+  left: 12%;
+  bottom: 34%;
+  animation-delay: 1.7s;
+  width: 2px;
+  height: 2px;
+}
+.ember--5 {
+  left: 34%;
+  bottom: 26%;
+  animation-delay: 2.2s;
+}
+.ember--6 {
+  left: 20%;
+  bottom: 36%;
+  animation-delay: 2.8s;
+}
+
+.cta-energy .ember--1 {
+  left: 42%;
+  bottom: 30%;
+}
+.cta-energy .ember--3 {
+  left: 50%;
+  bottom: 28%;
+}
+.cta-energy .ember--5 {
+  left: 58%;
+  bottom: 32%;
+}
+
+@keyframes ember-rise {
+  0% {
+    opacity: 0;
+    transform: translateY(0) scale(0.8);
+  }
+  20% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-72px) scale(0.4);
+  }
 }
 
 .hero-inner {
+  position: relative;
+  z-index: 1;
   width: min(100%, var(--max));
   margin: 0 auto;
   display: grid;
@@ -333,12 +628,47 @@ button {
 }
 
 .hero-stage {
+  position: relative;
   display: flex;
   justify-content: center;
 }
 
+.device-aura {
+  position: absolute;
+  inset: 8% 12%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.scan-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 40%;
+  border: 1px solid rgba(255, 107, 53, 0.2);
+  animation: scan-spin 8.2s linear infinite;
+}
+
+.scan-ring--b {
+  inset: 8%;
+  border-color: rgba(255, 180, 138, 0.18);
+  animation-duration: 12s;
+  animation-direction: reverse;
+}
+
+@keyframes scan-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.hero-stage .device {
+  position: relative;
+  z-index: 1;
+}
+
 .hero-copy .logo-mark--hero,
 .hero-copy .wordmark--hero,
+.hero-copy .brand-underline,
 .hero-copy .hero-line,
 .hero-copy .hero-cta {
   opacity: 0;
@@ -352,11 +682,16 @@ button {
 .hero-copy .wordmark--hero {
   animation-delay: 120ms;
 }
+.hero-copy .brand-underline {
+  animation:
+    rise var(--motion-slow) var(--ease-out) 160ms forwards,
+    underline-pulse 2.8s ease-in-out 520ms infinite;
+}
 .hero-copy .hero-line {
-  animation-delay: 200ms;
+  animation-delay: 220ms;
 }
 .hero-copy .hero-cta {
-  animation-delay: 280ms;
+  animation-delay: 300ms;
 }
 
 .hero-stage .device {
@@ -399,11 +734,23 @@ button {
 .btn-primary {
   background: linear-gradient(180deg, #ff8a5a 0%, var(--primary-deep) 100%);
   color: #000;
+  box-shadow: 0 0 0 0 rgba(255, 107, 53, 0.35);
+  animation: cta-glow 2.8s ease-in-out infinite;
 }
 
 .btn-primary:hover,
 .btn-primary:focus-visible {
   opacity: 0.92;
+}
+
+@keyframes cta-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 107, 53, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 24px 2px rgba(255, 107, 53, 0.35);
+  }
 }
 
 .btn-ghost {
@@ -478,6 +825,12 @@ button {
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--text-secondary);
+}
+
+.reveal.is-in .eyebrow {
+  color: var(--primary);
+  text-shadow: 0 0 18px rgba(255, 107, 53, 0.25);
+  transition: color var(--motion-slow) var(--ease-out), text-shadow var(--motion-slow) var(--ease-out);
 }
 
 .section-title {
@@ -616,7 +969,14 @@ button {
 }
 
 /* CTA */
+.section--cta {
+  position: relative;
+  overflow: hidden;
+}
+
 .cta {
+  position: relative;
+  z-index: 1;
   text-align: center;
   padding-block: var(--space-xl);
 }
@@ -757,6 +1117,15 @@ button {
   .logo-ring,
   .logo-ring--inner,
   .logo-mark--hero,
+  .logo-mark--cta,
+  .logo-core-glow,
+  .brand-underline,
+  .ambient-orb,
+  .ripple,
+  .bolt,
+  .ember,
+  .scan-ring,
+  .btn-primary,
   .hero-copy .logo-mark--hero,
   .hero-copy .wordmark--hero,
   .hero-copy .hero-line,
@@ -765,6 +1134,16 @@ button {
     animation: none !important;
     opacity: 1;
     transform: none;
+  }
+
+  .bolt,
+  .ember,
+  .ripple {
+    opacity: 0 !important;
+  }
+
+  .ambient-orb {
+    opacity: 0.12;
   }
 
   .reveal {

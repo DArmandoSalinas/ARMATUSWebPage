@@ -15,6 +15,11 @@
 </head>
 <body>
   <a class="skip" href="#coach">Skip to content</a>
+  <div class="ambient" aria-hidden="true">
+    <span class="ambient-orb ambient-orb--a"></span>
+    <span class="ambient-orb ambient-orb--b"></span>
+    <span class="ambient-orb ambient-orb--c"></span>
+  </div>
 
   <header class="topbar" data-topbar>
     <a class="topbar-brand" href="#top" aria-label="ARMATUS">
@@ -37,14 +42,37 @@
   <main id="top">
     <!-- Hero -->
     <section class="hero" aria-label="ARMATUS">
+      <div class="hero-energy" aria-hidden="true">
+        <span class="ripple ripple--1"></span>
+        <span class="ripple ripple--2"></span>
+        <span class="ripple ripple--3"></span>
+        <svg class="bolt" viewBox="0 0 64 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            class="bolt-path"
+            d="M36 4 L14 52 H30 L24 92 L52 40 H34 L36 4 Z"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linejoin="round"
+            stroke-linecap="round"
+          />
+        </svg>
+        <span class="ember ember--1"></span>
+        <span class="ember ember--2"></span>
+        <span class="ember ember--3"></span>
+        <span class="ember ember--4"></span>
+        <span class="ember ember--5"></span>
+        <span class="ember ember--6"></span>
+      </div>
       <div class="hero-inner">
         <div class="hero-copy">
           <div class="logo-mark logo-mark--hero" aria-hidden="true">
             <span class="logo-ring"></span>
             <span class="logo-ring logo-ring--inner"></span>
+            <span class="logo-core-glow"></span>
             <img src="assets/brand/icon.png" width="96" height="96" alt="" decoding="async" fetchpriority="high" />
           </div>
           <h1 class="wordmark wordmark--hero">ARMATUS</h1>
+          <span class="brand-underline" aria-hidden="true"></span>
           <p class="hero-line" data-i18n="hero.line">Fuerza con criterio de coach. No un chatbot genérico.</p>
           <div class="hero-cta">
             <a class="btn btn-primary" href="https://apps.apple.com/app/id6772606138" target="_blank" rel="noopener noreferrer" data-i18n="hero.cta">Descargar en App Store</a>
@@ -52,6 +80,10 @@
           </div>
         </div>
         <div class="hero-stage">
+          <div class="device-aura" aria-hidden="true">
+            <span class="scan-ring scan-ring--a"></span>
+            <span class="scan-ring scan-ring--b"></span>
+          </div>
           <figure class="device">
             <img
               src="assets/screens/01-coach-today.webp"
@@ -219,8 +251,31 @@
 
     <!-- Final CTA -->
     <section class="section section--cta" id="descargar">
+      <div class="cta-energy" aria-hidden="true">
+        <span class="ripple ripple--1"></span>
+        <span class="ripple ripple--2"></span>
+        <svg class="bolt bolt--cta" viewBox="0 0 64 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            class="bolt-path"
+            d="M36 4 L14 52 H30 L24 92 L52 40 H34 L36 4 Z"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linejoin="round"
+            stroke-linecap="round"
+          />
+        </svg>
+        <span class="ember ember--1"></span>
+        <span class="ember ember--3"></span>
+        <span class="ember ember--5"></span>
+      </div>
       <div class="section-inner cta reveal">
+        <div class="logo-mark logo-mark--cta" aria-hidden="true">
+          <span class="logo-ring"></span>
+          <span class="logo-ring logo-ring--inner"></span>
+          <img src="assets/brand/icon.png" width="64" height="64" alt="" loading="lazy" decoding="async" />
+        </div>
         <h2 class="wordmark wordmark--cta">ARMATUS</h2>
+        <span class="brand-underline brand-underline--center" aria-hidden="true"></span>
         <p class="section-lead cta-lead" data-i18n="cta.lead">Abre la App Store. Entrena con un protocolo, no con improvisación.</p>
         <div class="hero-cta">
           <a class="btn btn-primary" href="https://apps.apple.com/app/id6772606138" target="_blank" rel="noopener noreferrer" data-i18n="cta.store">Descargar en App Store</a>
