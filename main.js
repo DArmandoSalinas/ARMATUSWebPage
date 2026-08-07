@@ -371,6 +371,7 @@
   });
 
   if (!reduceMotion && "IntersectionObserver" in window) {
+    const narrow = window.matchMedia("(max-width: 899px)").matches;
     const io = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -380,7 +381,11 @@
           }
         });
       },
-      { rootMargin: "0px 0px -8% 0px", threshold: 0.12 }
+      {
+        // Reveal earlier on phones so sections don't sit invisible mid-scroll
+        rootMargin: narrow ? "0px 0px -2% 0px" : "0px 0px -8% 0px",
+        threshold: narrow ? 0.06 : 0.12,
+      }
     );
     document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
   } else {
