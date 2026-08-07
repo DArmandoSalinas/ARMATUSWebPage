@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ARMATUS — Entrenamiento de fuerza con criterio de coach</title>
-  <meta name="description" content="ARMATUS es coaching profesional de fuerza: plan semanal, sesión del día según cómo te sientes, tracker y técnica. EN/ES." />
+  <title>ARMATUS — La fuerza no se improvisa. Se arma.</title>
+  <meta name="description" content="ARMATUS — del latín armātus: armado, equipado, fortificado. Coaching de fuerza con plan semanal, sesión del día y criterio real. No improvisación." />
   <meta name="theme-color" content="#000000" />
   <link rel="icon" type="image/png" href="assets/brand/favicon.png" />
   <link rel="apple-touch-icon" href="assets/brand/icon-192.png" />
-  <meta property="og:title" content="ARMATUS" />
-  <meta property="og:description" content="Professional strength coaching — not a generic fitness chatbot." />
+  <meta property="og:title" content="ARMATUS — Strength isn’t improvised. It’s armed." />
+  <meta property="og:description" content="From Latin armātus: armed, equipped, fortified. Professional strength coaching with judgment — plan, daily session, technique." />
   <meta property="og:image" content="assets/brand/icon.png" />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -19,6 +19,7 @@
     <span class="ambient-orb ambient-orb--a"></span>
     <span class="ambient-orb ambient-orb--b"></span>
     <span class="ambient-orb ambient-orb--c"></span>
+    <span class="ambient-orb ambient-orb--d"></span>
   </div>
 
   <header class="topbar" data-topbar>
@@ -43,26 +44,103 @@
     <!-- Hero -->
     <section class="hero" aria-label="ARMATUS">
       <div class="hero-energy" aria-hidden="true">
+        <span class="hero-flash"></span>
         <span class="ripple ripple--1"></span>
         <span class="ripple ripple--2"></span>
         <span class="ripple ripple--3"></span>
-        <svg class="bolt" viewBox="0 0 64 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            class="bolt-path"
-            d="M36 4 L14 52 H30 L24 92 L52 40 H34 L36 4 Z"
-            stroke="currentColor"
-            stroke-width="2.5"
-            stroke-linejoin="round"
-            stroke-linecap="round"
-          />
-        </svg>
+        <span class="ripple ripple--4"></span>
         <span class="ember ember--1"></span>
         <span class="ember ember--2"></span>
         <span class="ember ember--3"></span>
         <span class="ember ember--4"></span>
         <span class="ember ember--5"></span>
         <span class="ember ember--6"></span>
+        <span class="ember ember--7"></span>
+        <span class="ember ember--8"></span>
       </div>
+
+      <!-- Full-bleed diagonal thunder across the hero -->
+      <div class="hero-thunder" aria-hidden="true">
+        <span class="thunder-strike-flash"></span>
+        <svg class="thunder-svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" fill="none">
+          <defs>
+            <filter id="thunder-glow" x="-40%" y="-40%" width="180%" height="180%">
+              <feGaussianBlur stdDeviation="6" result="blur" />
+              <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+            <filter id="thunder-glow-soft" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur stdDeviation="14" result="blur" />
+              <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+            <linearGradient id="thunder-grad" x1="40" y1="20" x2="1560" y2="880" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#FFB48A" />
+              <stop offset="40%" stop-color="#FF6B35" />
+              <stop offset="100%" stop-color="#E04A12" />
+            </linearGradient>
+          </defs>
+          <!-- soft bloom -->
+          <path
+            class="thunder-bloom"
+            d="M40 48 L220 110 L165 145 L410 230 L330 275 L620 370 L530 420 L860 520 L760 575 L1120 680 L1000 740 L1380 820 L1280 860 L1560 890"
+            stroke="url(#thunder-grad)"
+            stroke-width="28"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            filter="url(#thunder-glow-soft)"
+          />
+          <!-- main jagged bolt -->
+          <path
+            class="thunder-main"
+            d="M40 48 L220 110 L165 145 L410 230 L330 275 L620 370 L530 420 L860 520 L760 575 L1120 680 L1000 740 L1380 820 L1280 860 L1560 890"
+            stroke="url(#thunder-grad)"
+            stroke-width="5.5"
+            stroke-linecap="round"
+            stroke-linejoin="miter"
+            filter="url(#thunder-glow)"
+          />
+          <!-- hot white-orange core -->
+          <path
+            class="thunder-core"
+            d="M40 48 L220 110 L165 145 L410 230 L330 275 L620 370 L530 420 L860 520 L760 575 L1120 680 L1000 740 L1380 820 L1280 860 L1560 890"
+            stroke="#FFE0C8"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="miter"
+          />
+          <!-- secondary ghost bolt (offset) -->
+          <path
+            class="thunder-ghost"
+            d="M120 10 L300 80 L250 110 L480 200 L410 240 L680 340 L600 380 L900 470 L820 520 L1180 640 L1080 690 L1420 780"
+            stroke="#FF6B35"
+            stroke-width="2.2"
+            stroke-linecap="round"
+            stroke-linejoin="miter"
+            filter="url(#thunder-glow)"
+          />
+          <!-- forks -->
+          <path class="thunder-branch thunder-branch--1" d="M220 110 L310 70 L295 40" stroke="#FFB48A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#thunder-glow)" />
+          <path class="thunder-branch thunder-branch--2" d="M410 230 L520 195 L505 155" stroke="#FF6B35" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" filter="url(#thunder-glow)" />
+          <path class="thunder-branch thunder-branch--3" d="M620 370 L540 330 L500 290" stroke="#E04A12" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" filter="url(#thunder-glow)" />
+          <path class="thunder-branch thunder-branch--4" d="M860 520 L980 480 L960 430" stroke="#FFB48A" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" filter="url(#thunder-glow)" />
+          <path class="thunder-branch thunder-branch--5" d="M1120 680 L1240 640 L1210 590" stroke="#FF6B35" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#thunder-glow)" />
+          <path class="thunder-branch thunder-branch--6" d="M1000 740 L920 800 L860 830" stroke="#E04A12" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" filter="url(#thunder-glow)" />
+        </svg>
+        <span class="thunder-spark thunder-spark--1"></span>
+        <span class="thunder-spark thunder-spark--2"></span>
+        <span class="thunder-spark thunder-spark--3"></span>
+        <span class="thunder-spark thunder-spark--4"></span>
+        <span class="thunder-spark thunder-spark--5"></span>
+        <span class="thunder-spark thunder-spark--6"></span>
+        <span class="thunder-spark thunder-spark--7"></span>
+      </div>
+
       <div class="hero-inner">
         <div class="hero-copy">
           <div class="logo-mark logo-mark--hero" aria-hidden="true">
@@ -73,18 +151,25 @@
           </div>
           <h1 class="wordmark wordmark--hero">ARMATUS</h1>
           <span class="brand-underline" aria-hidden="true"></span>
-          <p class="hero-line" data-i18n="hero.line">Fuerza con criterio de coach. No un chatbot genérico.</p>
+          <div class="hero-statement" data-hero-type>
+            <p class="hero-type" aria-live="polite">
+              <span class="hero-line hero-line--a" data-type-a>La fuerza no se improvisa.</span>
+              <span class="hero-line hero-line--b" data-type-b>Se arma.</span>
+            </p>
+          </div>
           <div class="hero-cta">
             <a class="btn btn-primary" href="https://apps.apple.com/app/id6772606138" target="_blank" rel="noopener noreferrer" data-i18n="hero.cta">Descargar en App Store</a>
             <a class="btn btn-ghost" href="#coach" data-i18n="hero.secondary">Ver el producto</a>
           </div>
         </div>
+
         <div class="hero-stage">
           <div class="device-aura" aria-hidden="true">
             <span class="scan-ring scan-ring--a"></span>
             <span class="scan-ring scan-ring--b"></span>
+            <span class="scan-ring scan-ring--c"></span>
           </div>
-          <figure class="device">
+          <figure class="device device--float">
             <img
               src="assets/screens/01-coach-today.webp"
               width="1600"
@@ -98,40 +183,57 @@
       </div>
     </section>
 
+    <!-- Meaning — primary manifesto -->
+    <section class="section section--origin" id="origen">
+      <div class="section-inner origin reveal">
+        <header class="origin-hero">
+          <p class="origin-latin" data-i18n="name.latin">armātus — del latín: armado, equipado, fortificado</p>
+          <h2 class="origin-title" data-i18n="name.title">Armado. Equipado. Fortificado.</h2>
+          <p class="origin-body origin-body--lead" data-i18n="name.body">ARMATUS no es un eslogan. Es una postura: llegar preparado — con plan, con juicio, con la perseverancia de quien se forja serie a serie. No entras a ciegas. Entras equipado. Blindado por el método. Listo para la carga.</p>
+        </header>
+        <div class="origin-why">
+          <h3 class="origin-why-title" data-i18n="why.title">Creado para restaurar el oficio de entrenar.</h3>
+          <p class="origin-body" data-i18n="why.body">La fuerza seria se diluía en tips vacíos, PDFs muertos y chatbots que inventan el día. ARMATUS existe para devolver criterio: plan con visión, sesión viva, técnica clara, registro que decide. No para entretenerte. Para fortalecerte.</p>
+        </div>
+      </div>
+    </section>
+
     <!-- Positioning -->
-    <section class="section" id="posicion">
+    <section class="section section--compare" id="posicion">
       <div class="section-inner reveal">
-        <h2 class="section-title" data-i18n="pos.title">Coaching profesional. No fitness AI genérico.</h2>
-        <p class="section-lead" data-i18n="pos.lead">Dos capas reales: plan semanal con sobrecarga progresiva, y sesión del día generada según energía, sueño, tiempo y foco.</p>
+        <p class="eyebrow" data-i18n="pos.tag">La diferencia</p>
+        <h2 class="section-title section-title--impact" data-i18n="pos.title">El genérico adivina. ARMATUS decide.</h2>
+        <p class="section-lead" data-i18n="pos.lead">Uno te da respuestas fáciles. El otro te arma con plan, sesión del día y memoria — coaching que avanza, no ruido que entretiene.</p>
         <div class="compare">
           <div class="compare-col">
             <p class="compare-label" data-i18n="pos.badLabel">Lo genérico</p>
-            <p class="compare-body" data-i18n="pos.bad">Prompts vagos. “Squat / Row / Press”. Sin plan, sin overload, sin técnica.</p>
+            <p class="compare-body" data-i18n="pos.bad">Prompts vagos. “Squat / Row / Press”. Sin plan. Sin overload. Sin técnica. Sin memoria de lo que hiciste ayer.</p>
           </div>
+          <div class="compare-vs" aria-hidden="true"><span>VS</span></div>
           <div class="compare-col compare-col--accent">
             <p class="compare-label" data-i18n="pos.goodLabel">ARMATUS</p>
-            <p class="compare-body" data-i18n="pos.good">Incline DB press. Deficit RDL. Bulgarian. Chest-supported row. Idioma fijo EN o ES.</p>
+            <p class="compare-body" data-i18n="pos.good">Ejercicios con nombre. Overload con mapa. Sesión según cómo llegas. Idioma fijo EN o ES. Un protocolo que no te suelta.</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Coach -->
-    <section class="section section--tone" id="coach">
+    <section class="section" id="coach">
       <div class="section-inner split reveal">
         <div class="split-copy">
-          <p class="eyebrow" data-i18n="coach.tag">Capa 2 · Coach</p>
-          <h2 class="section-title" data-i18n="coach.title">La sesión nace de cómo te sientes hoy.</h2>
-          <p class="section-lead" data-i18n="coach.lead">Energía, sueño, tiempo disponible y foco. El coach arma el trabajo del día — no un PDF estático.</p>
+          <p class="eyebrow" data-i18n="coach.tag">Coach del día</p>
+          <h2 class="section-title" data-i18n="coach.title">Llegas como llegas. El coach responde.</h2>
+          <p class="section-lead" data-i18n="coach.lead">Energía, sueño, tiempo, foco. Dices cómo estás — y ARMATUS arma el trabajo exacto. No un PDF frío. Una sesión viva.</p>
         </div>
         <div class="split-media phones">
           <figure class="device">
             <img src="assets/screens/01-coach-today.webp" width="1600" height="3221" alt="Check-in del día en ARMATUS Coach" loading="lazy" decoding="async" />
-            <figcaption data-i18n="coach.cap1">Check-in del día</figcaption>
+            <figcaption data-i18n="coach.cap1">Check-in</figcaption>
           </figure>
           <figure class="device">
             <img src="assets/screens/02-coach-session.webp" width="1280" height="2577" alt="Sesión generada en ARMATUS Coach" loading="lazy" decoding="async" />
-            <figcaption data-i18n="coach.cap2">Sesión generada</figcaption>
+            <figcaption data-i18n="coach.cap2">Sesión del día</figcaption>
           </figure>
         </div>
       </div>
@@ -141,9 +243,9 @@
     <section class="section" id="plan">
       <div class="section-inner split split--reverse reveal">
         <div class="split-copy">
-          <p class="eyebrow" data-i18n="plan.tag">Capa 1 · Plan semanal</p>
-          <h2 class="section-title" data-i18n="plan.title">Split, recuperación y overload con mapa.</h2>
-          <p class="section-lead" data-i18n="plan.lead">Regenera la semana, programa deload o vacaciones, y deja un brief personalizado. El roadmap muestra hacia dónde va la carga.</p>
+          <p class="eyebrow" data-i18n="plan.tag">Plan semanal</p>
+          <h2 class="section-title" data-i18n="plan.title">La carga tiene destino. Tú también.</h2>
+          <p class="section-lead" data-i18n="plan.lead">Split, recuperación y overload con mapa. Regenera, deload, vacaciones, brief. Ves hacia dónde va la fuerza — y el criterio detrás de cada decisión.</p>
         </div>
         <div class="split-media phones phones--three">
           <figure class="device">
@@ -167,13 +269,13 @@
       <div class="section-inner reveal">
         <div class="section-head">
           <p class="eyebrow" data-i18n="track.tag">Tracker · Técnica</p>
-          <h2 class="section-title" data-i18n="track.title">Registra con precisión. Técnica con bocetos reales.</h2>
-          <p class="section-lead" data-i18n="track.lead">Series, reps, peso, rest timer y alternativas con “coach pick” fijo. Autosave y recordatorios nativos.</p>
+          <h2 class="section-title" data-i18n="track.title">Lo que no se registra, no progresa.</h2>
+          <p class="section-lead" data-i18n="track.lead">Peso, reps, descanso, alternativas con coach pick. Bocetos reales para ejecutar limpio. Autosave nativo — nada se pierde entre series.</p>
         </div>
         <div class="tracker-layout">
           <figure class="device device--solo">
             <img src="assets/screens/03-tracker.webp" width="1280" height="2577" alt="Tracker de sesión en vivo en ARMATUS" loading="lazy" decoding="async" />
-            <figcaption data-i18n="track.cap">Sesión en vivo</figcaption>
+            <figcaption data-i18n="track.cap">En vivo</figcaption>
           </figure>
           <div class="boceto-grid" role="list">
             <figure class="boceto" role="listitem">
@@ -204,8 +306,8 @@
       <div class="section-inner split reveal">
         <div class="split-copy">
           <p class="eyebrow" data-i18n="journey.tag">Journey</p>
-          <h2 class="section-title" data-i18n="journey.title">PRs, curvas y sesiones recientes.</h2>
-          <p class="section-lead" data-i18n="journey.lead">El progreso no es un feed. Es el registro de carga que el coach usa para decidir la siguiente semana.</p>
+          <h2 class="section-title" data-i18n="journey.title">Tu fuerza deja huella. No likes.</h2>
+          <p class="section-lead" data-i18n="journey.lead">PRs, curvas, sesiones. La historia que el coach lee para armar la siguiente semana. Evidencia pura — sin motivación barata.</p>
         </div>
         <div class="split-media">
           <figure class="device device--solo">
@@ -221,8 +323,8 @@
       <div class="section-inner reveal">
         <div class="section-head">
           <p class="eyebrow" data-i18n="cal.tag">Calibración</p>
-          <h2 class="section-title" data-i18n="cal.title">El plan empieza con un perfil serio.</h2>
-          <p class="section-lead" data-i18n="cal.lead">Perfil, objetivo, preferencias de entrenamiento, horario y lifestyle/recovery. Sin eso, no hay coaching.</p>
+          <h2 class="section-title" data-i18n="cal.title">Sin conocerte, no hay protocolo.</h2>
+          <p class="section-lead" data-i18n="cal.lead">Perfil, objetivo, preferencias, horario, recovery. Primero el contexto. Después el arma — un plan que realmente te pertenece.</p>
         </div>
         <div class="rail" tabindex="0" aria-label="Onboarding screens">
           <figure class="device">
@@ -254,7 +356,18 @@
       <div class="cta-energy" aria-hidden="true">
         <span class="ripple ripple--1"></span>
         <span class="ripple ripple--2"></span>
+        <span class="ripple ripple--3"></span>
         <svg class="bolt bolt--cta" viewBox="0 0 64 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            class="bolt-path"
+            d="M36 4 L14 52 H30 L24 92 L52 40 H34 L36 4 Z"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linejoin="round"
+            stroke-linecap="round"
+          />
+        </svg>
+        <svg class="bolt bolt--cta bolt--cta-b" viewBox="0 0 64 96" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             class="bolt-path"
             d="M36 4 L14 52 H30 L24 92 L52 40 H34 L36 4 Z"
@@ -267,6 +380,7 @@
         <span class="ember ember--1"></span>
         <span class="ember ember--3"></span>
         <span class="ember ember--5"></span>
+        <span class="ember ember--7"></span>
       </div>
       <div class="section-inner cta reveal">
         <div class="logo-mark logo-mark--cta" aria-hidden="true">
@@ -276,7 +390,7 @@
         </div>
         <h2 class="wordmark wordmark--cta">ARMATUS</h2>
         <span class="brand-underline brand-underline--center" aria-hidden="true"></span>
-        <p class="section-lead cta-lead" data-i18n="cta.lead">Abre la App Store. Entrena con un protocolo, no con improvisación.</p>
+        <p class="section-lead cta-lead" data-i18n="cta.lead">Arma tu entrenamiento. O sigue improvisando.</p>
         <div class="hero-cta">
           <a class="btn btn-primary" href="https://apps.apple.com/app/id6772606138" target="_blank" rel="noopener noreferrer" data-i18n="cta.store">Descargar en App Store</a>
           <a class="btn btn-ghost" href="mailto:masdas.aipro@gmail.com" data-i18n="cta.contact">Contacto</a>
