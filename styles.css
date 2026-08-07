@@ -805,6 +805,8 @@ main,
 }
 
 .section--cta {
+  position: relative;
+  overflow: hidden;
   background: var(--background);
 }
 
@@ -969,11 +971,6 @@ main,
 }
 
 /* CTA */
-.section--cta {
-  position: relative;
-  overflow: hidden;
-}
-
 .cta {
   position: relative;
   z-index: 1;
