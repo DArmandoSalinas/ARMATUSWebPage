@@ -1,44 +1,29 @@
 # ARMATUS marketing site
 
-Static one-page product site (ES default / EN toggle). Orange-on-black protocol language — not a SaaS template.
+Static landing aligned to the mobile app design tokens in `mobile/constants/theme.ts`.
 
-## Local preview
+## Tokens (source of truth)
+
+Mirrored in `styles.css` `:root` from the Expo app:
+
+- Background `#000000`, surface `#1C1C1E`, primary `#FF6B35`
+- System UI typography (SF / Roboto / system)
+- Motion: 160 / 240 / 360 ms, ease-out cubic
+- Logo: `assets/brand/icon.png` + LogoHalo-style CSS rings
+
+## Local
 
 ```bash
 cd web
-npx --yes serve .
+python3 -m http.server 8899
 ```
 
-Open the URL printed in the terminal (usually `http://localhost:3000`).
+## Deploy (Vercel)
 
-## Deploy on Vercel
+- Root Directory: `.` (this folder) or `web` if deploying from the monorepo
+- Framework: Other (static)
+- `vercel.json` included
 
-1. Import the ARMATUS repo in [Vercel](https://vercel.com) **or** from this folder:
+## Repo
 
-   ```bash
-   cd web
-   npx vercel
-   ```
-
-2. Project settings:
-   - **Root Directory:** `web`
-   - **Framework Preset:** Other (static)
-   - Build command: leave empty
-   - Output directory: `.` (or leave default for static)
-
-3. Production deploy:
-
-   ```bash
-   cd web
-   npx vercel --prod
-   ```
-
-## Assets
-
-- `assets/screens/` — App Store 6.5" captures (WebP)
-- `assets/bocetos/` — technique illustrations (white/orange on black)
-- `assets/brand/` — app icon + favicon
-
-## Contact
-
-Replace `masdas.aipro@gmail.com` in `index.html` and `legal/` if needed.
+Also published at https://github.com/DArmandoSalinas/ARMATUSWebPage

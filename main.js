@@ -4,24 +4,18 @@
   const COPY = {
     es: {
       "nav.cta": "App Store",
-      "hero.kicker": "Protocolo de fuerza",
       "hero.line": "Fuerza con criterio de coach. No un chatbot genérico.",
       "hero.cta": "Descargar en App Store",
-      "hero.secondary": "Ver el protocolo",
-      "man.1":
-        "El trabajo no termina. Cada semana es un ciclo: construir, ajustar, repetir — con un propósito.",
-      "man.2":
-        "Duele. Es difícil. A veces parece imposible. Si amas el proceso, el protocolo te da dirección.",
-      "man.3":
-        "La meta no es la línea de llegada. Es el trabajo que haces en el camino — con variaciones de verdad.",
-      "frame.chalk": "La carga tiene memoria",
+      "hero.secondary": "Ver el producto",
+      "pos.title": "Coaching profesional. No fitness AI genérico.",
+      "pos.lead":
+        "Dos capas reales: plan semanal con sobrecarga progresiva, y sesión del día generada según energía, sueño, tiempo y foco.",
       "pos.badLabel": "Lo genérico",
       "pos.bad":
         "Prompts vagos. “Squat / Row / Press”. Sin plan, sin overload, sin técnica.",
       "pos.goodLabel": "ARMATUS",
       "pos.good":
         "Incline DB press. Deficit RDL. Bulgarian. Chest-supported row. Idioma fijo EN o ES.",
-      "bleed.work": "El trabajo es el punto. El protocolo lo ordena.",
       "coach.tag": "Capa 2 · Coach",
       "coach.title": "La sesión nace de cómo te sientes hoy.",
       "coach.lead":
@@ -65,24 +59,18 @@
     },
     en: {
       "nav.cta": "App Store",
-      "hero.kicker": "Strength protocol",
       "hero.line": "Strength coaching with judgment. Not a generic chatbot.",
       "hero.cta": "Download on the App Store",
-      "hero.secondary": "See the protocol",
-      "man.1":
-        "The work never ends. Each week is a cycle: build, adjust, repeat — with purpose.",
-      "man.2":
-        "It hurts. It’s hard. It may feel impossible. If you love the pursuit, the protocol gives direction.",
-      "man.3":
-        "The finish line isn’t the goal. It’s the work along the way — with real exercise variations.",
-      "frame.chalk": "Load has memory",
+      "hero.secondary": "See the product",
+      "pos.title": "Professional coaching. Not generic fitness AI.",
+      "pos.lead":
+        "Two real layers: a weekly plan with progressive overload, and a daily session built from energy, sleep, time, and focus.",
       "pos.badLabel": "The generic path",
       "pos.bad":
         "Vague prompts. “Squat / Row / Press”. No plan, no overload, no technique.",
       "pos.goodLabel": "ARMATUS",
       "pos.good":
         "Incline DB press. Deficit RDL. Bulgarian. Chest-supported row. Language locked EN or ES.",
-      "bleed.work": "The work is the point. The protocol orders it.",
       "coach.tag": "Layer 2 · Coach",
       "coach.title": "Today’s session starts from how you feel.",
       "coach.lead":
@@ -133,18 +121,15 @@
     const dict = COPY[lang] || COPY.es;
     root.lang = lang;
     document.title = dict.title;
-
     document.querySelectorAll("[data-i18n]").forEach((el) => {
       const key = el.getAttribute("data-i18n");
       if (key && dict[key] != null) el.textContent = dict[key];
     });
-
     buttons.forEach((btn) => {
       const active = btn.getAttribute("data-lang") === lang;
       btn.classList.toggle("is-active", active);
       btn.setAttribute("aria-pressed", active ? "true" : "false");
     });
-
     try {
       localStorage.setItem("armatus-lang", lang);
     } catch (_) {
@@ -152,14 +137,12 @@
     }
   }
 
-  const saved = (() => {
-    try {
-      return localStorage.getItem("armatus-lang");
-    } catch (_) {
-      return null;
-    }
-  })();
-
+  let saved = null;
+  try {
+    saved = localStorage.getItem("armatus-lang");
+  } catch (_) {
+    /* ignore */
+  }
   applyLang(saved === "en" || saved === "es" ? saved : "es");
 
   buttons.forEach((btn) => {
@@ -170,6 +153,7 @@
   });
 
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
   if (!reduceMotion && "IntersectionObserver" in window) {
     const io = new IntersectionObserver(
       (entries) => {
@@ -180,7 +164,7 @@
           }
         });
       },
-      { rootMargin: "0px 0px -8% 0px", threshold: 0.12 }
+      { rootMargin: "0px 0px -6% 0px", threshold: 0.1 }
     );
     document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
   } else {
@@ -190,7 +174,7 @@
   const topbar = document.querySelector("[data-topbar]");
   if (topbar) {
     const onScroll = () => {
-      topbar.classList.toggle("is-solid", window.scrollY > 48);
+      topbar.classList.toggle("is-solid", window.scrollY > 24);
     };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });

@@ -4,25 +4,26 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ARMATUS — Entrenamiento de fuerza con criterio de coach</title>
-  <meta name="description" content="ARMATUS es coaching profesional de fuerza: plan semanal, sesión del día según cómo te sientes, tracker y técnica con bocetos reales. EN/ES." />
+  <meta name="description" content="ARMATUS es coaching profesional de fuerza: plan semanal, sesión del día según cómo te sientes, tracker y técnica. EN/ES." />
   <meta name="theme-color" content="#000000" />
   <link rel="icon" type="image/png" href="assets/brand/favicon.png" />
   <link rel="apple-touch-icon" href="assets/brand/icon-192.png" />
   <meta property="og:title" content="ARMATUS" />
   <meta property="og:description" content="Professional strength coaching — not a generic fitness chatbot." />
   <meta property="og:image" content="assets/brand/icon.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <a class="skip" href="#protocolo">Skip to content</a>
-  <div class="grain" aria-hidden="true"></div>
-  <div class="ambient" aria-hidden="true"></div>
+  <a class="skip" href="#coach">Skip to content</a>
 
   <header class="topbar" data-topbar>
-    <a class="topbar-mark" href="#top" aria-label="ARMATUS">ARMATUS</a>
+    <a class="topbar-brand" href="#top" aria-label="ARMATUS">
+      <span class="logo-mark logo-mark--nav" aria-hidden="true">
+        <span class="logo-ring"></span>
+        <img src="assets/brand/icon.png" width="28" height="28" alt="" />
+      </span>
+      <span class="wordmark">ARMATUS</span>
+    </a>
     <div class="topbar-actions">
       <div class="lang" role="group" aria-label="Language">
         <button type="button" class="lang-btn is-active" data-lang="es" aria-pressed="true">ES</button>
@@ -34,282 +35,193 @@
   </header>
 
   <main id="top">
-    <!-- HERO -->
+    <!-- Hero -->
     <section class="hero" aria-label="ARMATUS">
-      <div class="hero-media" aria-hidden="true">
-        <img class="hero-bg" src="assets/atmosphere/hero-max.webp" width="2400" height="1600" alt="" decoding="async" fetchpriority="high" />
-        <img class="hero-boceto" src="assets/atmosphere/hero-deep.webp" width="2400" height="1600" alt="" decoding="async" />
-        <div class="hero-scrim"></div>
-      </div>
-
-      <div class="hero-frame">
+      <div class="hero-inner">
         <div class="hero-copy">
-          <p class="hero-kicker" data-i18n="hero.kicker">Protocolo de fuerza</p>
-          <h1 class="brand">ARMATUS</h1>
-          <span class="brand-rule" aria-hidden="true"></span>
+          <div class="logo-mark logo-mark--hero" aria-hidden="true">
+            <span class="logo-ring"></span>
+            <span class="logo-ring logo-ring--inner"></span>
+            <img src="assets/brand/icon.png" width="96" height="96" alt="" decoding="async" fetchpriority="high" />
+          </div>
+          <h1 class="wordmark wordmark--hero">ARMATUS</h1>
           <p class="hero-line" data-i18n="hero.line">Fuerza con criterio de coach. No un chatbot genérico.</p>
           <div class="hero-cta">
             <a class="btn btn-primary" href="https://apps.apple.com/app/id6772606138" target="_blank" rel="noopener noreferrer" data-i18n="hero.cta">Descargar en App Store</a>
-            <a class="btn btn-ghost" href="#protocolo" data-i18n="hero.secondary">Ver el protocolo</a>
+            <a class="btn btn-ghost" href="#coach" data-i18n="hero.secondary">Ver el producto</a>
           </div>
         </div>
-
         <div class="hero-stage">
-          <div class="device device-hero">
-            <div class="device-glow" aria-hidden="true"></div>
-            <div class="device-bezel">
-              <img
-                src="assets/screens/01-coach-today.webp"
-                width="1600"
-                height="3221"
-                alt="ARMATUS Coach — daily check-in"
-                decoding="async"
-                fetchpriority="high"
-              />
-            </div>
+          <figure class="device">
+            <img
+              src="assets/screens/01-coach-today.webp"
+              width="1600"
+              height="3221"
+              alt="ARMATUS Coach — check-in del día"
+              decoding="async"
+              fetchpriority="high"
+            />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Positioning -->
+    <section class="section" id="posicion">
+      <div class="section-inner reveal">
+        <h2 class="section-title" data-i18n="pos.title">Coaching profesional. No fitness AI genérico.</h2>
+        <p class="section-lead" data-i18n="pos.lead">Dos capas reales: plan semanal con sobrecarga progresiva, y sesión del día generada según energía, sueño, tiempo y foco.</p>
+        <div class="compare">
+          <div class="compare-col">
+            <p class="compare-label" data-i18n="pos.badLabel">Lo genérico</p>
+            <p class="compare-body" data-i18n="pos.bad">Prompts vagos. “Squat / Row / Press”. Sin plan, sin overload, sin técnica.</p>
+          </div>
+          <div class="compare-col compare-col--accent">
+            <p class="compare-label" data-i18n="pos.goodLabel">ARMATUS</p>
+            <p class="compare-body" data-i18n="pos.good">Incline DB press. Deficit RDL. Bulgarian. Chest-supported row. Idioma fijo EN o ES.</p>
           </div>
         </div>
       </div>
-
-      <div class="hero-scroll" aria-hidden="true"><span></span></div>
     </section>
 
-    <!-- Manifesto (CBUM-style short text beat) -->
-    <section class="manifesto reveal" id="protocolo">
-      <p class="frame-tag">AR 01</p>
-      <p class="manifesto-text" data-i18n="man.1">El trabajo no termina. Cada semana es un ciclo: construir, ajustar, repetir — con un propósito.</p>
-    </section>
-
-    <!-- Full-bleed campaign frames -->
-    <section class="frame reveal">
-      <img src="assets/editorial/squat.webp" width="1920" height="1280" alt="" loading="lazy" decoding="async" />
-      <div class="frame-meta">
-        <span class="frame-tag">AR 02</span>
-        <span class="frame-label">High-bar squat</span>
-      </div>
-    </section>
-
-    <section class="frame frame-tall reveal">
-      <img src="assets/atmosphere/chalk-lift.webp" width="1200" height="1800" alt="" loading="lazy" decoding="async" />
-      <div class="frame-meta">
-        <span class="frame-tag">AR 03</span>
-        <span class="frame-label" data-i18n="frame.chalk">La carga tiene memoria</span>
-      </div>
-    </section>
-
-    <section class="manifesto manifesto-tight reveal">
-      <p class="frame-tag">AR 04</p>
-      <p class="manifesto-text" data-i18n="man.2">Duele. Es difícil. A veces parece imposible. Si amas el proceso, el protocolo te da dirección.</p>
-    </section>
-
-    <section class="frame-duo reveal">
-      <figure class="frame frame-half">
-        <img src="assets/editorial/rdl.webp" width="1920" height="1280" alt="" loading="lazy" decoding="async" />
-        <div class="frame-meta">
-          <span class="frame-tag">AR 05</span>
-          <span class="frame-label">Deficit RDL</span>
+    <!-- Coach -->
+    <section class="section section--tone" id="coach">
+      <div class="section-inner split reveal">
+        <div class="split-copy">
+          <p class="eyebrow" data-i18n="coach.tag">Capa 2 · Coach</p>
+          <h2 class="section-title" data-i18n="coach.title">La sesión nace de cómo te sientes hoy.</h2>
+          <p class="section-lead" data-i18n="coach.lead">Energía, sueño, tiempo disponible y foco. El coach arma el trabajo del día — no un PDF estático.</p>
         </div>
-      </figure>
-      <figure class="frame frame-half">
-        <img src="assets/editorial/bulgarian.webp" width="1920" height="1280" alt="" loading="lazy" decoding="async" />
-        <div class="frame-meta">
-          <span class="frame-tag">AR 06</span>
-          <span class="frame-label">Bulgarian</span>
+        <div class="split-media phones">
+          <figure class="device">
+            <img src="assets/screens/01-coach-today.webp" width="1600" height="3221" alt="Check-in del día en ARMATUS Coach" loading="lazy" decoding="async" />
+            <figcaption data-i18n="coach.cap1">Check-in del día</figcaption>
+          </figure>
+          <figure class="device">
+            <img src="assets/screens/02-coach-session.webp" width="1280" height="2577" alt="Sesión generada en ARMATUS Coach" loading="lazy" decoding="async" />
+            <figcaption data-i18n="coach.cap2">Sesión generada</figcaption>
+          </figure>
         </div>
-      </figure>
-    </section>
-
-    <!-- Product drop: Coach -->
-    <section class="drop" id="coach">
-      <div class="drop-copy reveal">
-        <p class="frame-tag">AR 07</p>
-        <p class="layer-tag" data-i18n="coach.tag">Capa 2 · Coach</p>
-        <h2 class="drop-title" data-i18n="coach.title">La sesión nace de cómo te sientes hoy.</h2>
-        <p class="drop-lead" data-i18n="coach.lead">Energía, sueño, tiempo disponible y foco. El coach arma el trabajo del día — no un PDF estático.</p>
-      </div>
-      <div class="drop-stage reveal">
-        <figure class="device">
-          <div class="device-bezel">
-            <img src="assets/screens/01-coach-today.webp" width="1600" height="3221" alt="" loading="lazy" decoding="async" />
-          </div>
-          <figcaption data-i18n="coach.cap1">Check-in del día</figcaption>
-        </figure>
-        <figure class="device device-offset">
-          <div class="device-bezel">
-            <img src="assets/screens/02-coach-session.webp" width="1280" height="2577" alt="" loading="lazy" decoding="async" />
-          </div>
-          <figcaption data-i18n="coach.cap2">Sesión generada</figcaption>
-        </figure>
       </div>
     </section>
 
-    <section class="frame reveal">
-      <img src="assets/atmosphere/barbell-detail.webp" width="2400" height="1600" alt="" loading="lazy" decoding="async" />
-      <div class="frame-meta frame-meta-xl">
-        <span class="frame-tag">AR 08</span>
-        <p class="frame-quote" data-i18n="bleed.work">El trabajo es el punto. El protocolo lo ordena.</p>
+    <!-- Weekly plan -->
+    <section class="section" id="plan">
+      <div class="section-inner split split--reverse reveal">
+        <div class="split-copy">
+          <p class="eyebrow" data-i18n="plan.tag">Capa 1 · Plan semanal</p>
+          <h2 class="section-title" data-i18n="plan.title">Split, recuperación y overload con mapa.</h2>
+          <p class="section-lead" data-i18n="plan.lead">Regenera la semana, programa deload o vacaciones, y deja un brief personalizado. El roadmap muestra hacia dónde va la carga.</p>
+        </div>
+        <div class="split-media phones phones--three">
+          <figure class="device">
+            <img src="assets/screens/04-weekly-plan.webp" width="1280" height="2577" alt="Plan semanal en ARMATUS" loading="lazy" decoding="async" />
+            <figcaption data-i18n="plan.cap1">Semana</figcaption>
+          </figure>
+          <figure class="device">
+            <img src="assets/screens/05-plan-rationale.webp" width="1280" height="2577" alt="Rationale del plan en ARMATUS" loading="lazy" decoding="async" />
+            <figcaption data-i18n="plan.cap2">Rationale</figcaption>
+          </figure>
+          <figure class="device">
+            <img src="assets/screens/06-overload-roadmap.webp" width="1280" height="2577" alt="Roadmap de overload en ARMATUS" loading="lazy" decoding="async" />
+            <figcaption data-i18n="plan.cap3">Overload</figcaption>
+          </figure>
+        </div>
       </div>
     </section>
 
-    <!-- Product drop: Plan -->
-    <section class="drop drop-reverse" id="plan">
-      <div class="drop-copy reveal">
-        <p class="frame-tag">AR 09</p>
-        <p class="layer-tag" data-i18n="plan.tag">Capa 1 · Plan semanal</p>
-        <h2 class="drop-title" data-i18n="plan.title">Split, recuperación y overload con mapa.</h2>
-        <p class="drop-lead" data-i18n="plan.lead">Regenera la semana, programa deload o vacaciones, y deja un brief personalizado. El roadmap muestra hacia dónde va la carga.</p>
-      </div>
-      <div class="drop-stage drop-trio reveal">
-        <figure class="device">
-          <div class="device-bezel">
-            <img src="assets/screens/04-weekly-plan.webp" width="1280" height="2577" alt="" loading="lazy" decoding="async" />
+    <!-- Tracker + technique -->
+    <section class="section section--tone" id="tracker">
+      <div class="section-inner reveal">
+        <div class="section-head">
+          <p class="eyebrow" data-i18n="track.tag">Tracker · Técnica</p>
+          <h2 class="section-title" data-i18n="track.title">Registra con precisión. Técnica con bocetos reales.</h2>
+          <p class="section-lead" data-i18n="track.lead">Series, reps, peso, rest timer y alternativas con “coach pick” fijo. Autosave y recordatorios nativos.</p>
+        </div>
+        <div class="tracker-layout">
+          <figure class="device device--solo">
+            <img src="assets/screens/03-tracker.webp" width="1280" height="2577" alt="Tracker de sesión en vivo en ARMATUS" loading="lazy" decoding="async" />
+            <figcaption data-i18n="track.cap">Sesión en vivo</figcaption>
+          </figure>
+          <div class="boceto-grid" role="list">
+            <figure class="boceto" role="listitem">
+              <img src="assets/bocetos/squat.jpg" width="768" height="512" alt="Boceto técnico: high-bar squat" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="boceto" role="listitem">
+              <img src="assets/bocetos/rdl.jpg" width="768" height="512" alt="Boceto técnico: deficit RDL" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="boceto" role="listitem">
+              <img src="assets/bocetos/bulgarian.jpg" width="768" height="512" alt="Boceto técnico: Bulgarian split squat" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="boceto" role="listitem">
+              <img src="assets/bocetos/bench.jpg" width="768" height="512" alt="Boceto técnico: incline DB press" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="boceto" role="listitem">
+              <img src="assets/bocetos/row.jpg" width="768" height="512" alt="Boceto técnico: chest-supported row" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="boceto" role="listitem">
+              <img src="assets/bocetos/pullup.jpg" width="768" height="512" alt="Boceto técnico: weighted pull-up" loading="lazy" decoding="async" />
+            </figure>
           </div>
-          <figcaption data-i18n="plan.cap1">Semana</figcaption>
-        </figure>
-        <figure class="device">
-          <div class="device-bezel">
-            <img src="assets/screens/05-plan-rationale.webp" width="1280" height="2577" alt="" loading="lazy" decoding="async" />
-          </div>
-          <figcaption data-i18n="plan.cap2">Rationale</figcaption>
-        </figure>
-        <figure class="device">
-          <div class="device-bezel">
-            <img src="assets/screens/06-overload-roadmap.webp" width="1280" height="2577" alt="" loading="lazy" decoding="async" />
-          </div>
-          <figcaption data-i18n="plan.cap3">Overload</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section class="manifesto reveal">
-      <p class="frame-tag">AR 10</p>
-      <p class="manifesto-text" data-i18n="man.3">La meta no es la línea de llegada. Es el trabajo que haces en el camino — con variaciones de verdad.</p>
-      <ul class="contrast" aria-label="Positioning">
-        <li>
-          <span class="contrast-label" data-i18n="pos.badLabel">Lo genérico</span>
-          <span data-i18n="pos.bad">Prompts vagos. “Squat / Row / Press”. Sin plan, sin overload, sin técnica.</span>
-        </li>
-        <li>
-          <span class="contrast-label accent" data-i18n="pos.goodLabel">ARMATUS</span>
-          <span data-i18n="pos.good">Incline DB press. Deficit RDL. Bulgarian. Chest-supported row. Idioma fijo EN o ES.</span>
-        </li>
-      </ul>
-    </section>
-
-    <!-- Lookbook technique -->
-    <section class="lookbook" id="tracker">
-      <div class="lookbook-head reveal">
-        <p class="frame-tag">AR 11</p>
-        <p class="layer-tag" data-i18n="track.tag">Tracker · Técnica</p>
-        <h2 class="drop-title" data-i18n="track.title">Registra con precisión. Técnica con bocetos reales.</h2>
-        <p class="drop-lead" data-i18n="track.lead">Series, reps, peso, rest timer y alternativas con “coach pick” fijo. Autosave y recordatorios nativos.</p>
-      </div>
-
-      <div class="lookbook-device reveal">
-        <figure class="device device-solo device-accent">
-          <div class="device-bezel">
-            <img src="assets/screens/03-tracker.webp" width="1280" height="2577" alt="" loading="lazy" decoding="async" />
-          </div>
-          <figcaption data-i18n="track.cap">Sesión en vivo</figcaption>
-        </figure>
-      </div>
-
-      <div class="lookbook-grid">
-        <figure class="look-tile reveal">
-          <img src="assets/editorial/bench.webp" width="1920" height="1280" alt="" loading="lazy" decoding="async" />
-          <figcaption><span class="frame-tag">AR 12</span> Incline DB press</figcaption>
-        </figure>
-        <figure class="look-tile reveal">
-          <img src="assets/editorial/row.webp" width="1920" height="1280" alt="" loading="lazy" decoding="async" />
-          <figcaption><span class="frame-tag">AR 13</span> Chest-supported row</figcaption>
-        </figure>
-        <figure class="look-tile reveal">
-          <img src="assets/editorial/deadlift.webp" width="1920" height="1280" alt="" loading="lazy" decoding="async" />
-          <figcaption><span class="frame-tag">AR 14</span> Conventional deadlift</figcaption>
-        </figure>
-        <figure class="look-tile reveal">
-          <img src="assets/editorial/pullup.webp" width="1920" height="1280" alt="" loading="lazy" decoding="async" />
-          <figcaption><span class="frame-tag">AR 15</span> Weighted pull-up</figcaption>
-        </figure>
-        <figure class="look-tile reveal">
-          <img src="assets/editorial/hipthrust.webp" width="1920" height="1280" alt="" loading="lazy" decoding="async" />
-          <figcaption><span class="frame-tag">AR 16</span> Barbell hip thrust</figcaption>
-        </figure>
-        <figure class="look-tile reveal">
-          <img src="assets/editorial/overhead.webp" width="1920" height="1280" alt="" loading="lazy" decoding="async" />
-          <figcaption><span class="frame-tag">AR 17</span> Overhead press</figcaption>
-        </figure>
+        </div>
       </div>
     </section>
 
-    <!-- Journey + Calibration -->
-    <section class="drop" id="journey">
-      <div class="drop-copy reveal">
-        <p class="frame-tag">AR 18</p>
-        <p class="layer-tag" data-i18n="journey.tag">Journey</p>
-        <h2 class="drop-title" data-i18n="journey.title">PRs, curvas y sesiones recientes.</h2>
-        <p class="drop-lead" data-i18n="journey.lead">El progreso no es un feed. Es el registro de carga que el coach usa para decidir la siguiente semana.</p>
-      </div>
-      <div class="drop-stage reveal">
-        <figure class="device device-solo device-accent">
-          <div class="device-bezel">
-            <img src="assets/screens/07-journey.webp" width="1280" height="2577" alt="" loading="lazy" decoding="async" />
-          </div>
-          <figcaption data-i18n="journey.cap">Progreso</figcaption>
-        </figure>
+    <!-- Journey -->
+    <section class="section" id="journey">
+      <div class="section-inner split reveal">
+        <div class="split-copy">
+          <p class="eyebrow" data-i18n="journey.tag">Journey</p>
+          <h2 class="section-title" data-i18n="journey.title">PRs, curvas y sesiones recientes.</h2>
+          <p class="section-lead" data-i18n="journey.lead">El progreso no es un feed. Es el registro de carga que el coach usa para decidir la siguiente semana.</p>
+        </div>
+        <div class="split-media">
+          <figure class="device device--solo">
+            <img src="assets/screens/07-journey.webp" width="1280" height="2577" alt="Journey: progreso y PRs en ARMATUS" loading="lazy" decoding="async" />
+            <figcaption data-i18n="journey.cap">Progreso</figcaption>
+          </figure>
+        </div>
       </div>
     </section>
 
-    <section class="rail-section" id="calibracion">
-      <div class="rail-head reveal">
-        <p class="frame-tag">AR 19</p>
-        <p class="layer-tag" data-i18n="cal.tag">Calibración</p>
-        <h2 class="drop-title" data-i18n="cal.title">El plan empieza con un perfil serio.</h2>
-        <p class="drop-lead" data-i18n="cal.lead">Perfil, objetivo, preferencias de entrenamiento, horario y lifestyle/recovery. Sin eso, no hay coaching.</p>
-      </div>
-      <div class="cal-rail reveal">
-        <figure class="device">
-          <div class="device-bezel">
-            <img src="assets/screens/08-onboarding-profile.webp" width="1280" height="2577" alt="" loading="lazy" decoding="async" />
-          </div>
-          <figcaption data-i18n="cal.cap1">Perfil</figcaption>
-        </figure>
-        <figure class="device">
-          <div class="device-bezel">
-            <img src="assets/screens/09-onboarding-goal.webp" width="1280" height="2577" alt="" loading="lazy" decoding="async" />
-          </div>
-          <figcaption data-i18n="cal.cap2">Objetivo</figcaption>
-        </figure>
-        <figure class="device">
-          <div class="device-bezel">
-            <img src="assets/screens/10-onboarding-training.webp" width="1280" height="2577" alt="" loading="lazy" decoding="async" />
-          </div>
-          <figcaption data-i18n="cal.cap3">Entrenamiento</figcaption>
-        </figure>
-        <figure class="device">
-          <div class="device-bezel">
-            <img src="assets/screens/11-onboarding-schedule.webp" width="1280" height="2577" alt="" loading="lazy" decoding="async" />
-          </div>
-          <figcaption data-i18n="cal.cap4">Horario</figcaption>
-        </figure>
-        <figure class="device">
-          <div class="device-bezel">
-            <img src="assets/screens/12-onboarding-lifestyle.webp" width="1280" height="2577" alt="" loading="lazy" decoding="async" />
-          </div>
-          <figcaption data-i18n="cal.cap5">Lifestyle</figcaption>
-        </figure>
+    <!-- Calibration -->
+    <section class="section section--tone" id="calibracion">
+      <div class="section-inner reveal">
+        <div class="section-head">
+          <p class="eyebrow" data-i18n="cal.tag">Calibración</p>
+          <h2 class="section-title" data-i18n="cal.title">El plan empieza con un perfil serio.</h2>
+          <p class="section-lead" data-i18n="cal.lead">Perfil, objetivo, preferencias de entrenamiento, horario y lifestyle/recovery. Sin eso, no hay coaching.</p>
+        </div>
+        <div class="rail" tabindex="0" aria-label="Onboarding screens">
+          <figure class="device">
+            <img src="assets/screens/08-onboarding-profile.webp" width="1280" height="2577" alt="Onboarding: perfil" loading="lazy" decoding="async" />
+            <figcaption data-i18n="cal.cap1">Perfil</figcaption>
+          </figure>
+          <figure class="device">
+            <img src="assets/screens/09-onboarding-goal.webp" width="1280" height="2577" alt="Onboarding: objetivo" loading="lazy" decoding="async" />
+            <figcaption data-i18n="cal.cap2">Objetivo</figcaption>
+          </figure>
+          <figure class="device">
+            <img src="assets/screens/10-onboarding-training.webp" width="1280" height="2577" alt="Onboarding: entrenamiento" loading="lazy" decoding="async" />
+            <figcaption data-i18n="cal.cap3">Entrenamiento</figcaption>
+          </figure>
+          <figure class="device">
+            <img src="assets/screens/11-onboarding-schedule.webp" width="1280" height="2577" alt="Onboarding: horario" loading="lazy" decoding="async" />
+            <figcaption data-i18n="cal.cap4">Horario</figcaption>
+          </figure>
+          <figure class="device">
+            <img src="assets/screens/12-onboarding-lifestyle.webp" width="1280" height="2577" alt="Onboarding: lifestyle" loading="lazy" decoding="async" />
+            <figcaption data-i18n="cal.cap5">Lifestyle</figcaption>
+          </figure>
+        </div>
       </div>
     </section>
 
     <!-- Final CTA -->
-    <section class="finale" id="descargar">
-      <div class="finale-media" aria-hidden="true">
-        <img src="assets/editorial/squat.webp" width="1920" height="1280" alt="" loading="lazy" decoding="async" />
-      </div>
-      <div class="finale-copy reveal">
-        <p class="frame-tag">AR 20</p>
-        <h2 class="brand brand-cta">ARMATUS</h2>
-        <p class="finale-lead" data-i18n="cta.lead">Abre la App Store. Entrena con un protocolo, no con improvisación.</p>
+    <section class="section section--cta" id="descargar">
+      <div class="section-inner cta reveal">
+        <h2 class="wordmark wordmark--cta">ARMATUS</h2>
+        <p class="section-lead cta-lead" data-i18n="cta.lead">Abre la App Store. Entrena con un protocolo, no con improvisación.</p>
         <div class="hero-cta">
           <a class="btn btn-primary" href="https://apps.apple.com/app/id6772606138" target="_blank" rel="noopener noreferrer" data-i18n="cta.store">Descargar en App Store</a>
           <a class="btn btn-ghost" href="mailto:masdas.aipro@gmail.com" data-i18n="cta.contact">Contacto</a>
@@ -320,14 +232,12 @@
 
   <footer class="footer">
     <div class="footer-inner">
-      <div class="footer-top">
-        <p class="footer-mark">ARMATUS</p>
-        <nav class="footer-nav" aria-label="Legal">
-          <a href="legal/privacy.html" data-i18n="footer.privacy">Privacidad</a>
-          <a href="legal/terms.html" data-i18n="footer.terms">Términos</a>
-          <a href="mailto:masdas.aipro@gmail.com">masdas.aipro@gmail.com</a>
-        </nav>
-      </div>
+      <p class="wordmark wordmark--footer">ARMATUS</p>
+      <nav class="footer-nav" aria-label="Legal">
+        <a href="legal/privacy.html" data-i18n="footer.privacy">Privacidad</a>
+        <a href="legal/terms.html" data-i18n="footer.terms">Términos</a>
+        <a href="mailto:masdas.aipro@gmail.com">masdas.aipro@gmail.com</a>
+      </nav>
       <p class="footer-note" data-i18n="footer.note">Guía general de entrenamiento. No es consejo médico.</p>
     </div>
   </footer>
