@@ -7,31 +7,31 @@
       "hero.lineA": "La fuerza no se improvisa.",
       "hero.lineB": "Se arma.",
       "hero.cta": "Descargar en App Store",
-      "hero.secondary": "Ver el sistema",
+      "hero.secondary": "Ver la arquitectura",
 
       "name.title": "Armado. Equipado. Fortificado.",
       "name.latin": "armātus — del latín: armado, equipado, fortificado",
       "name.body":
-        "ARMATUS no es un eslogan. Es una postura: llegar preparado — con plan, con juicio, con la perseverancia de quien se forja serie a serie. No entras a ciegas. Entras equipado. Blindado por el método. Listo para la carga.",
-      "why.title": "Creado para restaurar el oficio de entrenar.",
+        "ARMATUS es arquitectura de entrenamiento. Plan con dirección. Sesión con dosis. Técnica con estándar. Memoria que decide la siguiente carga.",
+      "why.title": "Para atletas que no aceptan consejos genéricos.",
       "why.body":
-        "La fuerza seria se diluía en tips vacíos, PDFs muertos y chatbots que inventan el día. ARMATUS existe para devolver criterio: plan con visión, sesión viva, técnica clara, registro que decide. No para entretenerte. Para fortalecerte.",
+        "Fuerza, hipertrofia y resistencia estructurada en el mismo sistema. ARMATUS gestiona la carga total — gym y deporte — para progresar sin quemar el sistema nervioso.",
 
-      "pos.tag": "La diferencia",
-      "pos.title": "El genérico adivina. ARMATUS decide.",
+      "pos.tag": "Principio",
+      "pos.title": "Arquitectura. No listas.",
       "pos.lead":
-        "Uno te entretiene con respuestas fáciles. El otro te arma un sistema completo: te conoce, planifica la semana, adapta el día, registra con técnica y usa tu historia para la siguiente carga.",
-      "pos.badLabel": "Lo genérico",
+        "Un protocolo cerrado: te calibra, arma la semana, dosifica el día, registra con precisión y regenera con evidencia.",
+      "pos.badLabel": "Ruido genérico",
       "pos.bad":
-        "Prompts vagos. “Squat / Row / Press”. Sin plan. Sin overload. Sin técnica. Sin memoria. Sin vida real.",
+        "Rutinas sueltas. Cero mapa de overload. El running no cuenta. La fatiga se ignora hasta que duele.",
       "pos.goodLabel": "ARMATUS",
       "pos.good":
-        "Perfil profundo. Plan con ciencia. Sesión según cómo llegas. Tracker con bocetos. Journey que alimenta la siguiente semana. EN o ES — sin improvisar.",
+        "Perfil profundo. Semana con lógica. Readiness antes de cargar. Tracker con estándar técnico. Journey que alimenta el siguiente ciclo. ES / EN.",
 
-      "loop.tag": "El sistema",
-      "loop.title": "Un ciclo. No una app de tips.",
+      "loop.tag": "Protocolo",
+      "loop.title": "Un ciclo cerrado. Cada vuelta, más preciso.",
       "loop.lead":
-        "Te conoce → arma la semana → adapta el día → registra limpio → lee el progreso → regenera mejor. Eso es ARMATUS.",
+        "Calibrar → planear → adaptar → ejecutar → evolucionar. La salida de hoy es la entrada de la siguiente semana.",
       "loop.s1": "Calibrar",
       "loop.s2": "Planear",
       "loop.s3": "Adaptar",
@@ -39,132 +39,133 @@
       "loop.s5": "Evolucionar",
 
       "cal.tag": "01 · Calibración",
-      "cal.title": "Primero te conoce. Después te arma.",
+      "cal.title": "Sin datos, no hay protocolo.",
       "cal.lead":
-        "Perfil, objetivo, equipo, horario, sueño, estrés, dieta, lesiones, deportes. Sin ese contexto no hay protocolo — solo ruido con buena tipografía.",
+        "Objetivo, equipo, horario, sueño, estrés, lesiones y deportes externos. ARMATUS no inventa tu semana. La calcula.",
       "cal.cap1": "Perfil",
       "cal.cap2": "Objetivo",
       "cal.cap3": "Entrenamiento",
       "cal.cap4": "Horario",
-      "cal.cap5": "Lifestyle",
+      "cal.cap5": "Carga de vida",
 
       "plan.tag": "02 · Plan semanal",
-      "plan.title": "La semana tiene rumbo. No días sueltos.",
+      "plan.title": "Overload con mapa. No ego.",
       "plan.lead":
-        "Un blueprint con tu nombre, tu objetivo y la arquitectura detrás. Regenera desde logs y PRs. Baja carga o viaja sin romper el protocolo. Diseña la semana — o deja que el criterio la arme.",
-      "plan.cap1": "Tu semana",
-      "plan.cap2": "Ciencia",
+        "Cada semana tiene rumbo, dosis y razón. Empuja la progresión. Protege del sobreentrenamiento. El roadmap es visible — no improvisado.",
+      "plan.cap1": "Semana",
+      "plan.cap2": "Rationale",
       "plan.cap3": "Modos",
-      "plan.subTag": "Antes de generar",
-      "plan.subTitle": "Techo de capacidad. No ego.",
+      "plan.subTag": "Readiness",
+      "plan.subTitle": "Primero el techo. Después la carga.",
       "plan.subLead":
-        "Qué puedes sostener hoy — no tu pace de carrera. Fatiga de la semana, notas como “rodilla sensible”. El plan se arma bajo un techo real.",
-      "plan.cap4": "Readiness",
-      "plan.designTag": "Diseño y chat",
-      "plan.designTitle": "Escríbela. O pídele cambios.",
+        "Fatiga acumulada. Sueño. Notas como “rodilla sensible”. El plan se arma bajo capacidad real — no bajo ilusión.",
+      "plan.cap4": "Techo",
+      "plan.designTag": "Control",
+      "plan.designTitle": "Tú defines. El sistema dosifica.",
       "plan.designLead":
-        "Templates rápidos, brief en lenguaje natural, o chat: “lower body el lunes”. Ves la propuesta con rationale. Aceptas — o te quedas con la semana actual.",
-      "plan.cap5": "Diseña",
+        "Plantilla, brief o chat: “lower body el lunes”. Ves la propuesta con rationale. Aceptas — o mantienes la semana vigente.",
+      "plan.cap5": "Diseño",
       "plan.cap6": "Chat",
-      "plan.arsenalTag": "El arsenal del plan",
-      "plan.arsenalTitle": "Más control. Mismo criterio.",
+      "plan.arsenalTag": "Capacidades",
+      "plan.arsenalTitle": "Herramientas. Mismo criterio.",
       "plan.a1t": "Regenerar con memoria",
       "plan.a1b":
-        "Una semana nueva no parte de cero: usa sesiones logueadas y PRs para ajustar volumen, recuperación y foco.",
-      "plan.a2t": "Diseña tu propia semana",
+        "La semana nueva parte de logs y PRs. Ajusta volumen, foco y recuperación con evidencia.",
+      "plan.a2t": "Diseñar la semana",
       "plan.a2b":
-        "Describe días, rests y deportes. ARMATUS completa dosis y lo deja como plan oficial.",
-      "plan.a3t": "Templates rápidos",
+        "Defines días, rests y deportes. ARMATUS completa dosis y lo firma como plan oficial.",
+      "plan.a3t": "Plantillas",
       "plan.a3b":
-        "Full body ×3, upper/lower ×4, base 5K y más — un atajo sin perder personalización.",
+        "Full body ×3, upper/lower ×4, base 5K. Atajos sin perder personalización.",
       "plan.a4t": "Deload y vacaciones",
       "plan.a4b":
-        "Baja la carga o pausa la semana. El protocolo sigue vivo; no se improvisa el regreso.",
+        "Bajas carga o pausas. El protocolo sigue. El regreso no se inventa.",
       "plan.a5t": "Mapa de overload",
-      "plan.a5b": "Ves hacia dónde va la progresión — no solo qué toca hoy.",
-      "plan.a6t": "Arma tu propia rutina",
+      "plan.a5b": "Ves la trayectoria de progresión — no solo la sesión de hoy.",
+      "plan.a6t": "Sesión custom",
       "plan.a6b":
-        "En Coach: construye una sesión custom cuando quieras salirte del plan del día — sin perder el registro en Journey.",
+        "Sales del plan del día en Coach. El registro sigue alimentando Journey.",
       "plan.cap7": "Overload",
 
       "coach.tag": "03 · Coach del día",
-      "coach.title": "El plan es la brújula. Hoy decide la sesión.",
+      "coach.title": "El plan es la brújula. Hoy es la dosis.",
       "coach.lead":
-        "Energía, sueño, tiempo, lugar, foco. Llegas como llegas — y el coach arma el trabajo exacto. Más ligero, swap, skip, o a full. No un PDF que te ignora.",
+        "Energía, sueño, tiempo, lugar, foco. El coach actúa con lógica fría: reduce, sustituye, omite o carga a full. Sin motivación vacía.",
       "coach.cap1": "Check-in",
-      "coach.cap2": "Sesión viva",
+      "coach.cap2": "Sesión",
 
       "track.tag": "04 · Tracker · Técnica",
-      "track.title": "Ejecuta limpio. Que cada serie cuente.",
+      "track.title": "Ejecución limpia. Datos limpios.",
       "track.lead":
-        "Series, peso, rest timer, alternativas con coach pick. Guía de setup, ejecución, errores y respiración. Bocetos reales. Autosave — el gimnasio no espera a la señal.",
+        "Series, carga, rest, alternativas con pick del coach. Setup, errores, respiración — con bocetos. Autosave. La señal no manda en el gym.",
       "track.cap1": "En vivo",
       "track.cap2": "Guía",
       "track.cap3": "Sesión",
       "track.bocetoLabel": "Bocetos de técnica",
 
       "journey.tag": "05 · Journey",
-      "journey.title": "El progreso cierra el ciclo.",
+      "journey.title": "La evidencia manda la siguiente carga.",
       "journey.lead":
-        "PRs, volumen, curvas, sesiones de gym y deporte. No es un feed: es la evidencia que regenera la siguiente semana más inteligente.",
+        "PRs, volumen, curvas, gym y deporte. No es un feed. Es el dataset con el que ARMATUS regenera la semana.",
       "journey.cap": "Evidencia",
 
-      "life.tag": "Vida real",
-      "life.title": "Armado también fuera del rack.",
+      "life.tag": "Híbrido",
+      "life.title": "La carrera también carga el sistema.",
       "life.lead":
-        "Carrera, bici, natación, viajes, lesiones, deload. El coach y el plan leen todo — no solo lo que pasó bajo la barra.",
+        "Running, bici, natación, triatlón. El deporte externo entra al algoritmo como fatiga real — no como nota al margen. La semana de fuerza se ajusta a la carga total.",
+      "life.c3t": "Deportes en el protocolo",
+      "life.c3b":
+        "Cada sesión de resistencia cuenta para recuperación y dosis. El plan de fuerza responde.",
       "life.c1t": "Límites y lesiones",
-      "life.c1b": "Historial, notas del día, ejercicios a evitar. Criterio de coach, no ego de chatbot.",
+      "life.c1b": "Historial, notas del día, ejercicios vetados. El ego no manda.",
       "life.c2t": "Deload y vacaciones",
-      "life.c2b": "Baja la carga o pausa la semana sin romper el protocolo.",
-      "life.c3t": "Deporte híbrido",
-      "life.c3b": "Registra carrera, bici, natación y más. Viaja a Journey y alimenta el siguiente plan.",
+      "life.c2b": "Reduces o pausas sin romper el hilo del protocolo.",
       "life.c4t": "Horarios reales",
       "life.c4b": "Ventanas por día, two-a-days, equipo mínimo en viaje.",
       "life.c5t": "Chat del plan",
-      "life.c5b": "Pide cambios con razón. Revisa. Acepta o quédate.",
+      "life.c5b": "Pides el cambio. Revisas el rationale. Aceptas o mantienes.",
       "life.c6t": "Offline en el gym",
-      "life.c6b": "Autosave, pausa/reanuda, cola offline. La señal no manda.",
+      "life.c6b": "Autosave, pausa, cola offline. El set no espera Wi‑Fi.",
       "life.cap": "Sport log",
 
-      "cta.lead": "Arma tu entrenamiento. O sigue improvisando.",
+      "cta.lead": "Arma el sistema. Deja de improvisar.",
       "cta.store": "Descargar en App Store",
       "cta.contact": "Contacto",
       "footer.privacy": "Privacidad",
       "footer.terms": "Términos",
       "footer.note": "Guía general de entrenamiento. No es consejo médico.",
-      title: "ARMATUS — La fuerza no se improvisa. Se arma.",
+      title: "ARMATUS — Arquitectura de fuerza. Sin improvisar.",
     },
     en: {
       "nav.cta": "App Store",
       "hero.lineA": "Strength isn’t improvised.",
       "hero.lineB": "It’s armed.",
       "hero.cta": "Download on the App Store",
-      "hero.secondary": "See the system",
+      "hero.secondary": "See the architecture",
 
       "name.title": "Armed. Equipped. Fortified.",
       "name.latin": "armātus — from Latin: armed, equipped, fortified",
       "name.body":
-        "ARMATUS is not a slogan. It is a stance: show up prepared — with a plan, with judgment, with the perseverance of someone forged set by set. You don’t walk in blind. You walk in equipped. Armored by method. Ready for the load.",
-      "why.title": "Built to restore the craft of training.",
+        "ARMATUS is training architecture. A week with direction. A session with dose. Technique with a standard. Memory that sets the next load.",
+      "why.title": "For athletes who refuse generic advice.",
       "why.body":
-        "Serious strength was dissolving into empty tips, dead PDFs, and chatbots inventing the day. ARMATUS exists to bring judgment back: a plan with vision, a living session, clear technique, a log that decides. Not to entertain you. To fortify you.",
+        "Strength, hypertrophy, and structured endurance in one system. ARMATUS manages total load — gym and sport — so you progress without torching the nervous system.",
 
-      "pos.tag": "The difference",
-      "pos.title": "Generic guesses. ARMATUS decides.",
+      "pos.tag": "Principle",
+      "pos.title": "Architecture. Not lists.",
       "pos.lead":
-        "One entertains you with easy answers. The other arms a full system: it knows you, plans the week, adapts the day, logs with technique, and uses your history for the next load.",
-      "pos.badLabel": "The generic path",
+        "A closed protocol: calibrate you, arm the week, dose the day, log with precision, regenerate from evidence.",
+      "pos.badLabel": "Generic noise",
       "pos.bad":
-        "Vague prompts. “Squat / Row / Press”. No plan. No overload. No technique. No memory. No real life.",
+        "Loose routines. No overload map. Runs don’t count. Fatigue is ignored until it hurts.",
       "pos.goodLabel": "ARMATUS",
       "pos.good":
-        "Deep profile. Plan with science. Session from how you arrive. Tracker with bocetos. Journey that feeds next week. EN or ES — no improvisation.",
+        "Deep profile. Week with logic. Readiness before load. Tracker with a technical standard. Journey that feeds the next cycle. EN / ES.",
 
-      "loop.tag": "The system",
-      "loop.title": "A loop. Not a tips app.",
+      "loop.tag": "Protocol",
+      "loop.title": "A closed loop. Each pass, sharper.",
       "loop.lead":
-        "Knows you → arms the week → adapts the day → logs clean → reads progress → regenerates smarter. That’s ARMATUS.",
+        "Calibrate → plan → adapt → execute → evolve. Today’s output is next week’s input.",
       "loop.s1": "Calibrate",
       "loop.s2": "Plan",
       "loop.s3": "Adapt",
@@ -172,101 +173,102 @@
       "loop.s5": "Evolve",
 
       "cal.tag": "01 · Calibration",
-      "cal.title": "First it knows you. Then it arms you.",
+      "cal.title": "No data. No protocol.",
       "cal.lead":
-        "Profile, goal, equipment, schedule, sleep, stress, diet, injuries, sports. Without that context there is no protocol — only noise with nice typography.",
+        "Goal, equipment, schedule, sleep, stress, injuries, external sports. ARMATUS doesn’t invent your week. It calculates it.",
       "cal.cap1": "Profile",
       "cal.cap2": "Goal",
       "cal.cap3": "Training",
       "cal.cap4": "Schedule",
-      "cal.cap5": "Lifestyle",
+      "cal.cap5": "Life load",
 
       "plan.tag": "02 · Weekly plan",
-      "plan.title": "The week has direction. Not loose days.",
+      "plan.title": "Overload with a map. Not ego.",
       "plan.lead":
-        "A blueprint with your name, your goal, and the architecture behind it. Regenerate from logs and PRs. Deload or travel without breaking the protocol. Design the week — or let judgment arm it.",
-      "plan.cap1": "Your week",
-      "plan.cap2": "Science",
+        "Every week has direction, dose, and rationale. It pushes progression. It guards against overtraining. The roadmap is visible — never guessed.",
+      "plan.cap1": "Week",
+      "plan.cap2": "Rationale",
       "plan.cap3": "Modes",
-      "plan.subTag": "Before generating",
-      "plan.subTitle": "Capacity ceiling. Not ego.",
+      "plan.subTag": "Readiness",
+      "plan.subTitle": "Ceiling first. Load second.",
       "plan.subLead":
-        "What you can hold today — not race pace. Weekly fatigue, notes like “sore knee.” The plan is built under a real ceiling.",
-      "plan.cap4": "Readiness",
-      "plan.designTag": "Design & chat",
-      "plan.designTitle": "Write it. Or ask for changes.",
+        "Accumulated fatigue. Sleep. Notes like “sore knee.” The plan builds under real capacity — not fantasy.",
+      "plan.cap4": "Ceiling",
+      "plan.designTag": "Control",
+      "plan.designTitle": "You define. The system doses.",
       "plan.designLead":
-        "Quick templates, a natural-language brief, or chat: “lower body on Monday.” See the proposal with rationale. Accept — or keep the current week.",
+        "Template, brief, or chat: “lower body on Monday.” See the proposal with rationale. Accept — or keep the live week.",
       "plan.cap5": "Design",
       "plan.cap6": "Chat",
-      "plan.arsenalTag": "Plan arsenal",
-      "plan.arsenalTitle": "More control. Same judgment.",
+      "plan.arsenalTag": "Capabilities",
+      "plan.arsenalTitle": "Tools. Same judgment.",
       "plan.a1t": "Regenerate with memory",
       "plan.a1b":
-        "A new week doesn’t start from zero: it uses logged sessions and PRs to adjust volume, recovery, and focus.",
-      "plan.a2t": "Design your own week",
+        "The new week starts from logs and PRs. Volume, focus, recovery — adjusted by evidence.",
+      "plan.a2t": "Design the week",
       "plan.a2b":
-        "Describe days, rests, and sports. ARMATUS fills doses and makes it the official plan.",
-      "plan.a3t": "Quick templates",
+        "You set days, rests, sports. ARMATUS fills doses and signs it as the official plan.",
+      "plan.a3t": "Templates",
       "plan.a3b":
-        "Full body ×3, upper/lower ×4, 5K base, and more — a shortcut without losing personalization.",
+        "Full body ×3, upper/lower ×4, 5K base. Shortcuts without losing personalization.",
       "plan.a4t": "Deload & vacation",
       "plan.a4b":
-        "Drop load or pause the week. The protocol stays alive; the comeback isn’t improvised.",
+        "Drop load or pause. The protocol stays intact. The return isn’t invented.",
       "plan.a5t": "Overload map",
-      "plan.a5b": "See where progression is headed — not only what’s on today.",
-      "plan.a6t": "Build your own routine",
+      "plan.a5b": "See the progression trajectory — not only today’s session.",
+      "plan.a6t": "Custom session",
       "plan.a6b":
-        "In Coach: build a custom session when you step off today’s plan — without losing the log in Journey.",
+        "Leave today’s plan in Coach. The log still feeds Journey.",
       "plan.cap7": "Overload",
 
       "coach.tag": "03 · Daily coach",
-      "coach.title": "The plan is the compass. Today decides the session.",
+      "coach.title": "The plan is the compass. Today is the dose.",
       "coach.lead":
-        "Energy, sleep, time, place, focus. You arrive as you are — and the coach builds the exact work. Lighter, swap, skip, or full send. Not a PDF that ignores you.",
+        "Energy, sleep, time, place, focus. The coach acts with cold logic: reduce, swap, skip, or go full. No empty motivation.",
       "coach.cap1": "Check-in",
-      "coach.cap2": "Living session",
+      "coach.cap2": "Session",
 
       "track.tag": "04 · Tracker · Technique",
-      "track.title": "Execute clean. Make every set count.",
+      "track.title": "Clean execution. Clean data.",
       "track.lead":
-        "Sets, weight, rest timer, alternatives with a coach pick. Setup, execution, mistakes, breathing. Real bocetos. Autosave — the gym doesn’t wait on signal.",
+        "Sets, load, rest, alternatives with a coach pick. Setup, faults, breathing — with bocetos. Autosave. Signal doesn’t run the gym.",
       "track.cap1": "Live",
       "track.cap2": "Guide",
       "track.cap3": "Session",
       "track.bocetoLabel": "Technique bocetos",
 
       "journey.tag": "05 · Journey",
-      "journey.title": "Progress closes the loop.",
+      "journey.title": "Evidence sets the next load.",
       "journey.lead":
-        "PRs, volume, curves, gym and sport sessions. Not a feed: evidence that regenerates next week smarter.",
+        "PRs, volume, curves, gym and sport. Not a feed. The dataset ARMATUS uses to regenerate the week.",
       "journey.cap": "Evidence",
 
-      "life.tag": "Real life",
-      "life.title": "Armed beyond the rack too.",
+      "life.tag": "Hybrid",
+      "life.title": "The run loads the system too.",
       "life.lead":
-        "Run, bike, swim, travel, injuries, deload. Coach and plan read all of it — not only what happened under the bar.",
+        "Running, cycling, swimming, triathlon prep. External sport enters the algorithm as real fatigue — not a footnote. Strength week adjusts to total load.",
+      "life.c3t": "Sports in the protocol",
+      "life.c3b":
+        "Every endurance session counts toward recovery and dose. The strength plan responds.",
       "life.c1t": "Limits & injuries",
-      "life.c1b": "History, day notes, exercises to avoid. Coach judgment — not chatbot ego.",
+      "life.c1b": "History, day notes, banned lifts. Ego doesn’t set the session.",
       "life.c2t": "Deload & vacation",
-      "life.c2b": "Drop load or pause the week without breaking the protocol.",
-      "life.c3t": "Hybrid sport",
-      "life.c3b": "Log run, bike, swim, and more. It lands in Journey and feeds the next plan.",
+      "life.c2b": "Reduce or pause without breaking the protocol thread.",
       "life.c4t": "Real schedules",
-      "life.c4b": "Day windows, two-a-days, minimal equipment while traveling.",
+      "life.c4b": "Day windows, two-a-days, minimal gear while traveling.",
       "life.c5t": "Plan chat",
-      "life.c5b": "Ask for changes with reason. Review. Accept or keep.",
+      "life.c5b": "Request the change. Review the rationale. Accept or hold.",
       "life.c6t": "Offline in the gym",
-      "life.c6b": "Autosave, pause/resume, offline queue. Signal doesn’t run the session.",
+      "life.c6b": "Autosave, pause, offline queue. The set doesn’t wait on Wi‑Fi.",
       "life.cap": "Sport log",
 
-      "cta.lead": "Arm your training. Or keep improvising.",
+      "cta.lead": "Arm the system. Stop improvising.",
       "cta.store": "Download on the App Store",
       "cta.contact": "Contact",
       "footer.privacy": "Privacy",
       "footer.terms": "Terms",
       "footer.note": "General training guidance. Not medical advice.",
-      title: "ARMATUS — Strength isn’t improvised. It’s armed.",
+      title: "ARMATUS — Strength architecture. No improvisation.",
     },
   };
 
@@ -334,6 +336,21 @@
     typeRoot.classList.add("is-typed");
   }
 
+  function screenSrc(screenId, lang) {
+    if (lang === "es") return `assets/screens/es/${screenId}.webp`;
+    return `assets/screens/${screenId}.webp`;
+  }
+
+  function applyScreens(lang) {
+    document.querySelectorAll("img[data-screen]").forEach((img) => {
+      const id = img.getAttribute("data-screen");
+      if (!id) return;
+      const next = screenSrc(id, lang);
+      if (img.getAttribute("src") === next) return;
+      img.setAttribute("src", next);
+    });
+  }
+
   function applyLang(lang) {
     const dict = COPY[lang] || COPY.es;
     root.lang = lang;
@@ -347,6 +364,7 @@
       btn.classList.toggle("is-active", active);
       btn.setAttribute("aria-pressed", active ? "true" : "false");
     });
+    applyScreens(lang);
     try {
       localStorage.setItem("armatus-lang", lang);
     } catch (_) {
