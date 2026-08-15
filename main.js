@@ -3,10 +3,10 @@
 
   const COPY = {
     es: {
-      "nav.cta": "App Store",
+      "nav.cta": "Pronto",
       "hero.lineA": "La fuerza no se improvisa.",
       "hero.lineB": "Se arma.",
-      "hero.cta": "Descargar en App Store",
+      "hero.cta": "Pronto en App Store",
       "hero.secondary": "Ver la arquitectura",
 
       "name.title": "Armado. Equipado. Fortificado.",
@@ -129,7 +129,7 @@
       "life.cap": "Sport log",
 
       "cta.lead": "Arma el sistema. Deja de improvisar.",
-      "cta.store": "Descargar en App Store",
+      "cta.store": "Pronto en App Store",
       "cta.contact": "Contacto",
       "footer.privacy": "Privacidad",
       "footer.terms": "Términos",
@@ -137,10 +137,10 @@
       title: "ARMATUS — Arquitectura de fuerza. Sin improvisar.",
     },
     en: {
-      "nav.cta": "App Store",
+      "nav.cta": "Soon",
       "hero.lineA": "Strength isn’t improvised.",
       "hero.lineB": "It’s armed.",
-      "hero.cta": "Download on the App Store",
+      "hero.cta": "Coming soon to the App Store",
       "hero.secondary": "See the architecture",
 
       "name.title": "Armed. Equipped. Fortified.",
@@ -263,7 +263,7 @@
       "life.cap": "Sport log",
 
       "cta.lead": "Arm the system. Stop improvising.",
-      "cta.store": "Download on the App Store",
+      "cta.store": "Coming soon to the App Store",
       "cta.contact": "Contact",
       "footer.privacy": "Privacy",
       "footer.terms": "Terms",

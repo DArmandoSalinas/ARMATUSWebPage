@@ -282,6 +282,11 @@ main,
   opacity: 0.85;
 }
 
+.topbar-link--soon {
+  cursor: default;
+  pointer-events: none;
+}
+
 /* Wordmark — app brand caps */
 .wordmark {
   font-size: 11px;
@@ -1303,6 +1308,11 @@ main,
 .btn-primary:hover,
 .btn-primary:focus-visible {
   opacity: 0.92;
+}
+
+.btn-soon {
+  cursor: default;
+  pointer-events: none;
 }
 
 @keyframes cta-glow {
