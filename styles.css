@@ -2145,6 +2145,7 @@ main,
 
   .topbar-brand {
     min-width: 0;
+    min-height: 44px;
   }
 
   .topbar-brand .wordmark {
